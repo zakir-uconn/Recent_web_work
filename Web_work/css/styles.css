@@ -1,0 +1,147 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  header {
+    background-color: #002855;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  .hero {
+    position: relative;
+    background: url('https://bpir.media.uconn.edu/wp-content/uploads/sites/3452/2022/02/lib-itangle1900x500-1900x450.jpg') no-repeat center center/cover;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero h2 {
+    background-color: rgba(0, 40, 85, 0.7);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 2rem;
+  }
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: -80px;
+    flex-wrap: wrap;
+    z-index: 2;
+    position: relative;
+  }
+  .stat {
+    background-color: #002855;
+    color: white;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin: 1rem;
+  }
+  .stat small {
+    margin-top: 0.5rem;
+    font-weight: normal;
+    font-size: 0.9rem;
+  }
+  .icons-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 3rem 1rem;
+  }
+  .icon-box {
+    width: 150px;
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .icon-box:hover {
+    transform: scale(1.1);
+  }
+  .icon-box img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0.5rem;
+  }
+  #chart-container {
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  #chart-container canvas {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    aspect-ratio: 2 / 1;
+  }
+  @media (max-width: 768px) {
+    .stats {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .stat {
+      width: 180px;
+      height: 180px;
+      font-size: 1.2rem;
+    }
+    .hero {
+      height: 250px;
+      padding: 1rem;
+    }
+    .hero h2 {
+      font-size: 1.5rem;
+      padding: 0.75rem 1.5rem;
+    }
+  }
+  .footer-main-centered {
+background-color: #001E44;
+color: white;
+text-align: center;
+padding: 2rem 1rem;
+}
+
+.footer-main-centered img {
+margin-bottom: 1rem;
+}
+
+.footer-main-centered p {
+margin: 0.5rem 0;
+font-size: 0.95rem;
+}
+
+.footer-main-centered .footer-menu {
+list-style: none;
+padding: 0;
+margin-top: 1rem;
+}
+
+.footer-main-centered .footer-menu li {
+display: inline-block;
+margin: 0 1rem;
+}
+
+.footer-main-centered .footer-menu a {
+color: white;
+text-decoration: underline;
+}
+
+.footer-main-centered .footer-menu a:hover {
+text-decoration: none;
+}

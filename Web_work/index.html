@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UConn Talent & Workforce Insights Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>UConn Talent & Workforce Insights Dashboard</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Bridging the Gap Between Education and Employment with Data-Driven Insights</h2>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <div>291K</div>
+      <small>Completions by Institutions</small>
+    </div>
+    <div class="stat">
+      <div>1.7M</div>
+      <small>Total Job Postings<br>(2022–2023)</small>
+    </div>
+    <div class="stat">
+      <div>52K</div>
+      <small>Top Employer Postings</small>
+    </div>
+  </section>
+
+  <section class="icons-section">
+    <div class="icon-box" onclick="loadSection('jobPostings')">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="Job Postings">
+      <p>Job Postings</p>
+    </div>
+    <div class="icon-box" onclick="loadSection('completions')">
+      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Completions vs Job Demand">
+      <p>Completions vs Job Demand</p>
+    </div>
+    <div class="icon-box" onclick="loadSection('skills')">
+      <img src="https://cdn-icons-png.flaticon.com/512/2942/2942073.png" alt="Top Skills">
+      <p>Top Skills</p>
+    </div>
+    <div class="icon-box" onclick="loadSection('employers')">
+      <img src="https://cdn-icons-png.flaticon.com/512/2602/2602044.png" alt="Employer Trends">
+      <p>Employer Trends</p>
+    </div>
+    <div class="icon-box" onclick="loadSection('regions')">
+      <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Regional Insights">
+      <p>Regional Insights</p>
+    </div>
+    <!-- <div class="icon-box" onclick="loadSection('salary')">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920209.png" alt="Salary Analysis">
+      <p>Salary Analysis</p>
+    </div> -->
+    <div class="icon-box" onclick="loadSection('story')">
+      <img src="https://cdn-icons-png.flaticon.com/512/3110/3110076.png" alt="Custom Plots">
+      <p>Custom Plots</p>
+    </div>
+  </section>
+
+  <div id="chart-container">
+    <h3>Select a section above to view insights</h3>
+  </div>
+  <footer class="footer-main-centered">
+    <div class="footer-content">
+      <img 
+        alt="University of Connecticut wordmark"
+        src="https://uconn.edu/wp-content/uploads/2019/02/uconn-wordmark-stacked-white.svg"
+        width="200"
+      />
+      <p>Storrs, Connecticut 06269<br>
+      (860) 486-2000</p>
+      <ul class="footer-menu">
+        <li><a href="https://uconn.edu">UConn Home</a></li>
+        <li><a href="https://uconn.edu/disclaimers-privacy-copyright/">Disclaimers, Privacy, &amp; Copyright</a></li>
+        <li><a href="https://accessibility.uconn.edu/">Accessibility</a></li>
+        <li><a href="#">© 2025 University of Connecticut</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
